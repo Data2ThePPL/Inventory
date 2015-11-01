@@ -15,7 +15,9 @@ sneaker_inventory = {
     "Rebok" => 75
   }
 
-puts sneaker_inventory
+  sneaker_inventory.each do | item, price |
+    puts "#{item}: $#{price}"
+  end
 
 # user adds to the list
 
@@ -28,3 +30,7 @@ puts "type the price of the new sneaker"
 sneaker_inventory [sneaker_inventory.keys.last] = gets.chomp.to_i #fromhttp://stackoverflow.com/questions/7749131/accessing-the-last-key-value-pair-in-a-ruby-1-9-hash
 
 puts sneaker_inventory
+
+sneaker_inventory.each do | item, price |
+  puts "#{item}: $#{price}"
+end
