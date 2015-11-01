@@ -5,3 +5,11 @@
 # Allow the user to update existing items in the inventory and print the updated items to the screen
 # Include a prompt to update additional items (after printing the new results)
 # Allow the user to Add items to the inventory and print the new results to the screen
+
+sneaker_inventory = {
+    "Nike" => 120,
+    "Skechers" => 65,
+    "Converse" => 90,
+    "Rebok" => 75
+  }
+puts sneaker_inventory
